@@ -92,10 +92,10 @@ const SignupForm = () => {
               value={demand}
               onChange={handleChange(setDemand)}
             >
-              <option>A living wage</option>
-              <option>Paid leave</option>
-              <option>Strengthen unions</option>
-              <option>Single Payer Healthcare</option>
+              <option>Living Wage</option>
+              <option>Paid Time Off</option>
+              <option>Right to Unions</option>
+              <option>Single-Payer Healthcare</option>
               <option>Tuition-Free Higher Ed</option>
             </select>
             <span style={{ display: "none" }}></span>
