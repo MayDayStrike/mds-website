@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import * as FormStyles from "./form.module.css"
 
 const SignupForm = () => {
   const [firstName, setFirstName] = useState()
@@ -11,7 +12,7 @@ const SignupForm = () => {
   }
 
   return (
-    <div id="mauticform_wrapper_basesignupform">
+    <div id="mauticform_wrapper_basesignupform" class={FormStyles.formContainer}>
       <form
         autoComplete="false"
         method="post"
@@ -24,12 +25,12 @@ const SignupForm = () => {
         <div id="mauticform_basesignupform_message"></div>
 
         <div data-mautic-form-page="1">
-          <div id="mauticform_basesignupform_first_name">
+          <div id="mauticform_basesignupform_first_name" class={FormStyles.formField}>
             <label
               id="mauticform_label_basesignupform_first_name"
               htmlFor="mauticform_input_basesignupform_first_name"
             >
-              First Name
+              First Name <span className={FormStyles.required}>*</span>
             </label>
             <input
               id="mauticform_input_basesignupform_first_name"
@@ -37,11 +38,12 @@ const SignupForm = () => {
               value={firstName}
               onChange={handleChange(setFirstName)}
               type="text"
+              required
             />
             <span style={{ display: "none" }}></span>
           </div>
 
-          <div id="mauticform_basesignupform_last_name">
+          <div id="mauticform_basesignupform_last_name" class={FormStyles.formField}>
             <label
               id="mauticform_label_basesignupform_last_name"
               htmlFor="mauticform_input_basesignupform_last_name"
@@ -62,12 +64,14 @@ const SignupForm = () => {
             id="mauticform_basesignupform_email_address"
             data-validate="email_address"
             data-validation-type="email"
+            class={FormStyles.formField}
+            required
           >
             <label
               id="mauticform_label_basesignupform_email_address"
               htmlFor="mauticform_input_basesignupform_email_address"
             >
-              Email Address
+              Email Address <span className={FormStyles.required}>*</span>
             </label>
             <input
               id="mauticform_input_basesignupform_email_address"
@@ -79,12 +83,12 @@ const SignupForm = () => {
             <span style={{ display: "none" }}>This is required.</span>
           </div>
 
-          <div id="mauticform_basesignupform_what_demand_is_most_impor">
+          <div id="mauticform_basesignupform_what_demand_is_most_impor" class={FormStyles.formField}>
             <label
               id="mauticform_label_basesignupform_what_demand_is_most_impor"
               htmlFor="mauticform_input_basesignupform_what_demand_is_most_impor"
             >
-              What Demand is Most Important to You?
+              Which Demand is Most Important to You?
             </label>
             <select
               id="mauticform_input_basesignupform_what_demand_is_most_impor"
