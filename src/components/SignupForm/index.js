@@ -12,7 +12,7 @@ const SignupForm = () => {
   }
 
   return (
-    <div id="mauticform_wrapper_basesignupform" class={FormStyles.formContainer}>
+    <div id="mauticform_wrapper_basesignupform" className={FormStyles.formContainer}>
       <form
         autoComplete="false"
         method="post"
@@ -25,7 +25,7 @@ const SignupForm = () => {
         <div id="mauticform_basesignupform_message"></div>
 
         <div data-mautic-form-page="1">
-          <div id="mauticform_basesignupform_first_name" class={FormStyles.formField}>
+          <div id="mauticform_basesignupform_first_name" className={FormStyles.formField}>
             <label
               id="mauticform_label_basesignupform_first_name"
               htmlFor="mauticform_input_basesignupform_first_name"
@@ -43,7 +43,7 @@ const SignupForm = () => {
             <span style={{ display: "none" }}></span>
           </div>
 
-          <div id="mauticform_basesignupform_last_name" class={FormStyles.formField}>
+          <div id="mauticform_basesignupform_last_name" className={FormStyles.formField}>
             <label
               id="mauticform_label_basesignupform_last_name"
               htmlFor="mauticform_input_basesignupform_last_name"
@@ -64,7 +64,7 @@ const SignupForm = () => {
             id="mauticform_basesignupform_email_address"
             data-validate="email_address"
             data-validation-type="email"
-            class={FormStyles.formField}
+            className={FormStyles.formField}
             required
           >
             <label
@@ -83,7 +83,7 @@ const SignupForm = () => {
             <span style={{ display: "none" }}>This is required.</span>
           </div>
 
-          <div id="mauticform_basesignupform_what_demand_is_most_impor" class={FormStyles.formField}>
+          <div id="mauticform_basesignupform_what_demand_is_most_impor" className={FormStyles.formField}>
             <label
               id="mauticform_label_basesignupform_what_demand_is_most_impor"
               htmlFor="mauticform_input_basesignupform_what_demand_is_most_impor"

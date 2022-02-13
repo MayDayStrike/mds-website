@@ -6,9 +6,8 @@ import DemandList from "../components/DemandList"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import SignupForm from "../components/SignupForm"
-import "./index.module.css";
 
-const modalStyles = {
+const modalStyles = smallScreen => ({
   content: {
     top: '50%',
     left: '50%',
@@ -21,11 +20,11 @@ const modalStyles = {
     padding: 0,
     borderRadius: 2,
     border: 'none',
-    maxWidth: '40rem',
+    width: smallScreen ? 'inherit' : '30rem',
   },
   header: {
     width: '100%',
-    padding: '1rem 2.5rem',
+    padding: smallScreen ? '1rem' : '1rem 2.5rem',
     backgroundColor: '#c73a26',
     color: '#e6dba9',
   },
@@ -35,12 +34,21 @@ const modalStyles = {
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, .4)',
   },
-};
+});
 
 const IndexPage = () => {
   const [ show, setShow ] = useState(false);
+  const mediaMatch = window.matchMedia('(max-width: 534px)');
+  const [matches, setMatches] = useState(mediaMatch.matches);
+  
   useEffect(() => {
     Modal.setAppElement('body');
+  }, []);
+
+  useEffect(() => {
+    const handler = e => setMatches(e.matches);
+    mediaMatch.addListener(handler);
+    return () => mediaMatch.removeListener(handler);
   });
   
   return (
@@ -79,23 +87,22 @@ const IndexPage = () => {
         isOpen={show}
         onAfterOpen={null}
         onRequestClose={() => setShow(false)}
-        style={modalStyles}
-        containerStyle={{background: 'blue'}}
-        contentLabel="Sign Up"
+        style={modalStyles(matches)}
+        contentLabel="Sign Up for the Newsletter"
         shouldCloseOnOverlayClick={false}
       >
-        <div style={modalStyles.header}>
-          <h2 style={{ marginBottom: 0, display: 'inline' }}>
+        <div style={modalStyles(matches).header}>
+          <h3 style={{ marginBottom: 0, display: 'inline' }}>
             Sign Up for the Newsletter
-          </h2>
+          </h3>
           <span
             onClick={() => setShow(false)}
-            style={{ float: 'right', color: '#2A2B2B', fontSize: 36 }}
+            style={{ float: 'right', color: '#2A2B2B', fontSize: 22 }}
           >
               <FontAwesomeIcon icon={faTimes} />
             </span>
         </div>
-        <div style={modalStyles.body}>
+        <div style={modalStyles(matches).body}>
           <SignupForm />
         </div>
       </Modal>
