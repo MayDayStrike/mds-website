@@ -16,7 +16,7 @@ const modalStyles = smallScreen => ({
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     backgroundColor: '#e6dba9',
-    boxShadow: "0px 2px 10px 2px rgba(0, 0, 0, 0.4)",
+    boxShadow: '0px 2px 10px 2px rgba(0, 0, 0, 0.4)',
     padding: 0,
     borderRadius: 2,
     border: 'none',
@@ -38,7 +38,10 @@ const modalStyles = smallScreen => ({
 
 const IndexPage = () => {
   const [ show, setShow ] = useState(false);
-  const mediaMatch = window.matchMedia('(max-width: 534px)');
+  let mediaMatch = {};
+  if (typeof window !== 'undefined'){
+    mediaMatch = window.matchMedia('(max-width: 534px)');
+  }
   const [matches, setMatches] = useState(mediaMatch.matches);
   
   useEffect(() => {
@@ -54,7 +57,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="May Day Strike" />
-      <div style={{ marginBottom: "3rem" }}>
+      <div style={{ marginBottom: '3rem' }}>
         <h2>Who We Are</h2>
         <p>
           May Day Strike is a grassroots movement focused on establishing economic
