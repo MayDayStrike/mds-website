@@ -74,6 +74,9 @@ const IndexPage = () => {
         Join us on Discord and social media to become part of the new era of labor
         organization in the United States and across the globe.
       </p>
+      <p>
+        Sign up for the May Day Newsletter to stay informed about progress, requests, and future events!
+      </p>
       <div style={{ width: '100%' }}>
         <button
           style={{ margin: '0 auto', display: 'block' }}
