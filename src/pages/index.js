@@ -65,9 +65,7 @@ const IndexPage = () => {
           and political affiliation.
         </p>
         <p>
-          May 1 will mark the beginning of a general strike, a debt strike, and a
-          series of protests & demonstrations that will last until workers’
-          demands are met.
+          May 1st kicks off a series of direct action events supporting workers everywhere who are organizing for better conditions and demanding basic human rights. These actions will include a wave of protests, economic strikes, debt strikes, and union action <a href="https://twitter.com/search?q=%23UntilDemandsAreMet&src=typed_query&f=top">#UntilDemandsAreMet</a>!
         </p>
         <p>What are we asking for, exactly?</p>
       </div>
