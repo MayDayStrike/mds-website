@@ -51,6 +51,7 @@
 @media only screen and (max-width: 670px) {
   .menuBarContainer {
     margin: auto 1rem auto auto;
+    align-items: flex-start;
   }
   .menuBarList:not(:last-child) {display: none;}
   .menuBarList {
