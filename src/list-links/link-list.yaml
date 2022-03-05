@@ -18,7 +18,7 @@ listOfLinks:
     linkURL: "https://twitter.com/MayDayStrike22"
     linkDescription: "This is your call to action! Get #maydaystrike trending today!"
   - linkTitle: "Volunteer"
-    linkURL: "https://forms.gle/FPSGP8SMb9Ati4iT6"
+    linkURL: "/volunteer"
     linkDescription: "Do your part and contribute to the movement by volunteering your unique skills."
   - linkTitle: "YouTube"
     linkURL: "https://www.youtube.com/channel/UC_oY2LvpK7LL36raH7J0_og"

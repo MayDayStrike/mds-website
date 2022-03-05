@@ -1,0 +1,114 @@
+@keyframes SuccessStateFistPump {
+  0% {
+    transform: translateY(20em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(5em);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.form {
+  margin: 2rem 0;
+}
+
+.twoColumnFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 2rem auto 0;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.twoColumnFlex .formField .textInputLabel {
+  min-height: 80px; /* Ensure the vertical alignment of inputs is maintained with dynamic amounts of text */
+}
+
+.formField .textInputLabel h5,
+.formField h5 {
+  margin-bottom: 0.25rem;
+}
+
+.formField .textInputLabel p,
+.formField p {
+  font-size: 0.75rem;
+}
+
+.twoColumnFlex .formField {
+  width: calc(50% - 16px);
+}
+
+.formField .marginBottomHeading {
+  margin-bottom: 1rem;
+}
+
+.required {
+  color: red;
+}
+
+.validationError {
+  color: red;
+  font-size: 0.75rem;
+}
+
+.recaptchaContainer {
+  margin-bottom: 1rem;
+}
+
+.formSuccess p,
+.formSuccess h2 {
+  text-align: center;
+  max-width: 360px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 1s 0.5s ease-in-out forwards;
+}
+
+.illustrationContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0; /* Ensure the illustration is behind the footer at the bottom */
+  animation: SuccessStateFistPump 0.25s linear forwards;
+}
+
+.removeFormTransition {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .twoColumnFlex .formField .textInputLabel {
+    min-height: 98px; /** accommodate additional height for medium screens */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .twoColumnFlex {
+    flex-direction: column;
+  }
+
+  .twoColumnFlex .formField .textInputLabel {
+    min-height: 0;
+  }
+
+  .twoColumnFlex .formField {
+    width: 100%;
+  }
+}
