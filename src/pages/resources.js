@@ -38,6 +38,26 @@ const ResourcesPage = () => (
       height="533"
       style={{ background: 'transparent', border: '1px solid #ccc' }}
     />
+    <h2>US Unions</h2>
+    <iframe
+      class="airtable-embed"
+      src="https://airtable.com/embed/shrI5FYFGM34EQSQE?backgroundColor=teal&viewControls=on"
+      frameborder="0"
+      onmousewheel=""
+      width="100%"
+      height="533"
+      style={{ background: 'transparent', border: '1px solid #ccc' }}
+    />
+    <h2>UK Unions</h2>
+    <iframe
+      class="airtable-embed"
+      src="https://airtable.com/embed/shr9lrjVADN8hr7ho?backgroundColor=red&viewControls=on"
+      frameborder="0"
+      onmousewheel=""
+      width="100%"
+      height="533"
+      style={{ background: 'transparent', border: '1px solid #ccc' }}
+    />
     <h2>Organizing & Coordinating</h2>
     <iframe
       className="airtable-embed"
