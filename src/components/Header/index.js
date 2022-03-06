@@ -8,8 +8,14 @@ import MenuBar from "../MenuBar"
 
 const Header = ({ siteTitle }) => {
   const [headerHeight, setHeaderHeight] = useState(
-    document.querySelector("header#header-container")?.getBoundingClientRect()
-      .height ?? 0
+    (() => {
+      if (typeof window === "undefined") return 0
+      return (
+        document
+          .querySelector("header#header-container")
+          ?.getBoundingClientRect().height ?? 0
+      )
+    })()
   )
 
   return (
