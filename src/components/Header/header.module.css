@@ -1,12 +1,12 @@
 .headerContainer {
-  background: #C73A26;
-  margin-bottom: 1.45rem;
+  background: #c73a26;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
-
 
 .siteTitleLink {
   margin: 0;

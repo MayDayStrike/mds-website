@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #eee5c1;
+}
+
+.svgContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}

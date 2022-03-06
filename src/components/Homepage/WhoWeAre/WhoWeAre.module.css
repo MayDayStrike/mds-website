@@ -1,0 +1,27 @@
+.whoWeAreContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #241f20;
+  margin-top: -1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Stack this panel over the bottom of the fist svg */
+  position: relative;
+  z-index: 1;
+}
+
+.textContainer {
+  max-width: 750px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  color: #eee5c1;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .whoWeAreContainer {
+    margin-top: -0.5em;
+  }
+}
