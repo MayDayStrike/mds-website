@@ -7,16 +7,15 @@ import * as HeaderStyles from "./header.module.css"
 import MenuBar from "../MenuBar"
 
 const Header = ({ siteTitle }) => {
-  const [headerHeight, setHeaderHeight] = useState(
-    (() => {
-      if (typeof window === "undefined") return 0
-      return (
-        document
-          .querySelector("header#header-container")
-          ?.getBoundingClientRect().height ?? 0
-      )
-    })()
-  )
+  const [headerHeight, setHeaderHeight] = useState(0)
+
+  useLayoutEffect(() => {
+    if (typeof window === "undefined") return 0
+    setHeaderHeight(
+      document.querySelector("header#header-container")?.getBoundingClientRect()
+        .height ?? 0
+    )
+  }, [])
 
   return (
     <>
