@@ -1,21 +1,12 @@
-import React, { useLayoutEffect, useState } from "react"
-import PropTypes from "prop-types"
+import React, { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
 import * as HeaderStyles from "./header.module.css"
 import MenuBar from "../MenuBar"
 
-const Header = ({ siteTitle }) => {
-  const [headerHeight, setHeaderHeight] = useState(0)
-
-  useLayoutEffect(() => {
-    if (typeof window === "undefined") return 0
-    setHeaderHeight(
-      document.querySelector("header#header-container")?.getBoundingClientRect()
-        .height ?? 0
-    )
-  }, [])
+const Header = () => {
+  const [headerHeight, setHeaderHeight] = useState(100)
 
   return (
     <>
@@ -37,14 +28,6 @@ const Header = ({ siteTitle }) => {
       <div style={{ height: `${headerHeight}px` }} className="spacer" />
     </>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

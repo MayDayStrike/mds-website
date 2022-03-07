@@ -5,19 +5,23 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
 
-const ResourcesPage = () => (
-  <Layout>
+const ResourcesPage = ({ location }) => (
+  <Layout location={location}>
     <Seo title="Resource Library" />
-    <h1>Resource Library</h1>
-    <div style={{ marginBottom: '3rem' }}>
+    <h1 style={{ marginTop: "3rem" }}>Resource Library</h1>
+    <div style={{ marginBottom: "3rem" }}>
       <p>
-        The May Day Library is a collaborative effort to consolidate and categorize educational resources pertaining to protests, strikes, other forms of action necessary for change.
+        The May Day Library is a collaborative effort to consolidate and
+        categorize educational resources pertaining to protests, strikes, other
+        forms of action necessary for change.
       </p>
-      <b>
-        Resource Library Contact:
-      </b> Reave (<span style={{ color: '#C73A26'}}><FontAwesomeIcon icon={faDiscord} /></span>: Reave#2665)
+      <b>Resource Library Contact:</b> Reave (
+      <span style={{ color: "#C73A26" }}>
+        <FontAwesomeIcon icon={faDiscord} />
+      </span>
+      : Reave#2665)
     </div>
-    
+
     <h2>Protest Info</h2>
     <iframe
       className="airtable-embed"
@@ -26,7 +30,7 @@ const ResourcesPage = () => (
       onmousewheel=""
       width="100%"
       height="533"
-      style={{ background: 'transparent', border: '1px solid #ccc' }}
+      style={{ background: "transparent", border: "1px solid #ccc" }}
     />
     <h2>Mutual Aid Orgs by State</h2>
     <iframe
@@ -36,7 +40,7 @@ const ResourcesPage = () => (
       onmousewheel=""
       width="100%"
       height="533"
-      style={{ background: 'transparent', border: '1px solid #ccc' }}
+      style={{ background: "transparent", border: "1px solid #ccc" }}
     />
     <h2>US Unions</h2>
     <iframe
@@ -46,7 +50,7 @@ const ResourcesPage = () => (
       onmousewheel=""
       width="100%"
       height="533"
-      style={{ background: 'transparent', border: '1px solid #ccc' }}
+      style={{ background: "transparent", border: "1px solid #ccc" }}
     />
     <h2>UK Unions</h2>
     <iframe
@@ -56,7 +60,7 @@ const ResourcesPage = () => (
       onmousewheel=""
       width="100%"
       height="533"
-      style={{ background: 'transparent', border: '1px solid #ccc' }}
+      style={{ background: "transparent", border: "1px solid #ccc" }}
     />
     <h2>Organizing & Coordinating</h2>
     <iframe
@@ -66,7 +70,7 @@ const ResourcesPage = () => (
       onmousewheel=""
       width="100%"
       height="533"
-      style={{ background: 'transparent', border: '1px solid #ccc' }}
+      style={{ background: "transparent", border: "1px solid #ccc" }}
     />
     <h2>Useful tools & Websites</h2>
     <iframe
@@ -76,7 +80,7 @@ const ResourcesPage = () => (
       onmousewheel=""
       width="100%"
       height="533"
-      style={{ background: 'transparent', border: '1px solid #ccc' }}
+      style={{ background: "transparent", border: "1px solid #ccc" }}
     />
   </Layout>
 )

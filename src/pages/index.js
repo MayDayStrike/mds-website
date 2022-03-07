@@ -9,9 +9,9 @@ import WhatDoWeWant from "../components/Homepage/WhatDoWeWant"
 import WhenDoWeWantIt from "../components/Homepage/WhenDoWeWantIt"
 import CallToAction from "../components/Homepage/CallToAction"
 
-const IndexPage = () => {
+const IndexPage = ({ location }) => {
   return (
-    <Layout>
+    <Layout location={location}>
       <Seo title="May Day Strike" />
       <Splash />
       <WhoWeAre />
