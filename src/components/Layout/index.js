@@ -14,7 +14,12 @@ import "./layout.css"
 import Footer from "../Footer"
 
 const Layout = ({ location, children }) => {
-  const [isExemptFromMaxWidth, setIsExemptFromMaxWidth] = useState(false)
+  const initialState = (() => {
+    const exemptRoutes = ["/"]
+    const isExempt = exemptRoutes.some(route => location.pathname === route)
+    return isExempt
+  })()
+  const [isExemptFromMaxWidth, setIsExemptFromMaxWidth] = useState(initialState)
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
