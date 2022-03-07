@@ -1,0 +1,22 @@
+.container {
+  min-height: 35vh;
+  height: auto;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container :global(h1) {
+  max-width: 750px;
+  margin: 0 auto 1em auto;
+  justify-self: flex-start;
+}
+
+.container :global(p) {
+  max-width: 750px;
+  margin: 0 auto 1em auto;
+}

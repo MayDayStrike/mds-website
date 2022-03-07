@@ -5,12 +5,9 @@ import * as DemandListStyles from "./demandList.module.css"
 
 const DemandList = data => (
   <div className={DemandListStyles.demandListContainer}>
-    <h2>Our Demands</h2>
     <ol>
       {data.allListDemandsYaml.edges[0].node.listOfDemands.map(item => (
-        <li>
-          {item.demand}
-        </li>
+        <li key={item.demand}>{item.demand}</li>
       ))}
     </ol>
   </div>

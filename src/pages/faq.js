@@ -3,8 +3,8 @@ import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import FAQList from "../components/FAQList"
 
-const FAQPage = () => (
-  <Layout>
+const FAQPage = ({ location }) => (
+  <Layout location={location}>
     <Seo title="Frequently Asked Questions" />
     <FAQList />
   </Layout>
