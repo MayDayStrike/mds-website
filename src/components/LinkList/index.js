@@ -13,7 +13,10 @@ const LinkList = data => {
       fantastic place to start.
       <ul className={LinkListStyles.linkUnorderedList}>
         {data.allListLinksYaml.edges[0].node.listOfLinks.map(link => (
-          <li className={LinkListStyles.linkUnorderedListItem}>
+          <li
+            key={link.linkTitle}
+            className={LinkListStyles.linkUnorderedListItem}
+          >
             <LinkItem
               linkTitle={link.linkTitle}
               linkURL={link.linkURL}
@@ -26,7 +29,7 @@ const LinkList = data => {
   )
 }
 
-export default () => (
+const LinkListQuery = () => (
   <StaticQuery
     query={graphql`
       query linkListQuery {
@@ -46,3 +49,5 @@ export default () => (
     render={LinkList}
   />
 )
+
+export default LinkListQuery

@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useMemo } from "react"
+import React, { useLayoutEffect, useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -14,6 +14,13 @@ import "./layout.css"
 import Footer from "../Footer"
 
 const Layout = ({ location, children }) => {
+  const initialState = (() => {
+    const exemptRoutes = ["/"]
+    const isExempt = exemptRoutes.some(route => location.pathname === route)
+    return isExempt
+  })()
+  const [isExemptFromMaxWidth, setIsExemptFromMaxWidth] = useState(initialState)
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -24,11 +31,11 @@ const Layout = ({ location, children }) => {
     }
   `)
 
-  const isExemptFromMaxWidth = useMemo(() => {
-    if (typeof window === "undefined") return false
+  useLayoutEffect(() => {
     const exemptRoutes = ["/"]
+    const isExempt = exemptRoutes.some(route => location.pathname === route)
 
-    return exemptRoutes.some(route => location.pathname === route)
+    setIsExemptFromMaxWidth(isExempt)
   }, [location])
 
   return (

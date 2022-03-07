@@ -6,10 +6,12 @@ import FAQItem from "../FAQItem"
 const FAQList = data => (
   <div className={FAQListStyles.faqListContainer}>
     <h1>Frequently Asked Questions</h1>
-    This FAQ list is continually evolving and non-exhaustive. Updates will be added as more questions are brought to our attention. Thank you for standing in solidarity with us!
+    This FAQ list is continually evolving and non-exhaustive. Updates will be
+    added as more questions are brought to our attention. Thank you for standing
+    in solidarity with us!
     <ol>
-      {data.allListFaqsYaml.edges[0].node.listOfQuestions.map((question) => (
-        <li>
+      {data.allListFaqsYaml.edges[0].node.listOfQuestions.map(question => (
+        <li key={question.question}>
           <FAQItem
             question={question.question}
             answer={question.answer}
@@ -37,7 +39,7 @@ const FAQList = data => (
   </div>
 )
 
-export default () => (
+const FAQListQuery = () => (
   <StaticQuery
     query={graphql`
       query faqListQuery {
@@ -72,3 +74,5 @@ export default () => (
     render={FAQList}
   />
 )
+
+export default FAQListQuery
