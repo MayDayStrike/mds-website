@@ -22,8 +22,8 @@ const WhoWeAre = () => (
         </a>
         !
       </p>
-      <p style={{ marginTop: '3rem', textAlign: 'center' }}>
-        Learn how May Day came to exist, what it represents, and who lost their lives <br/> to establish it
+      <p style={{ marginTop: '3rem', textAlign: 'center', padding: '0 2px' }}>
+        Learn how May Day came to exist, what it represents, and who lost their lives to establish it
       </p>
       <Link to="/blog">
         <button style={{ margin: '0 auto', display: 'block' }}>Learn More</button>
