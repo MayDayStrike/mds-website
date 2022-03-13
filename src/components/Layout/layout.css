@@ -572,6 +572,9 @@ li > ul {
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
+.blog-container ul {
+  padding-left: 2rem;
+}
 blockquote *:last-child {
   margin-bottom: 0;
 }

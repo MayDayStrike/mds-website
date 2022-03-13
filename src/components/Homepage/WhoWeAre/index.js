@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import * as WhoWeAreStyles from "./WhoWeAre.module.css"
 
 const WhoWeAre = () => (
@@ -21,6 +22,12 @@ const WhoWeAre = () => (
         </a>
         !
       </p>
+      <p style={{ marginTop: '3rem', textAlign: 'center', padding: '0 2px' }}>
+        Learn how May Day came to exist, what it represents, and who lost their lives to establish it
+      </p>
+      <Link to="/blog">
+        <button style={{ margin: '0 auto', display: 'block' }}>Learn More</button>
+      </Link>
     </div>
   </section>
 )

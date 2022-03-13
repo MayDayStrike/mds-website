@@ -11,11 +11,11 @@ const Header = () => {
   return (
     <>
       <header id="header-container" className={HeaderStyles.headerContainer}>
-        <div style={{ minWidth: 100 }}>
+        <div style={{ marginLeft: '0.5rem' }}>
           <Link className={HeaderStyles.siteTitleLink} to="/">
             <StaticImage
               src="../../images/mayday-logo-circle.png"
-              width={100}
+              width={60}
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt="May Day Strike"

@@ -1,12 +1,12 @@
 .whoWeAreContainer {
   width: 100%;
-  height: 100vh;
   background-color: #241f20;
   margin-top: -1em;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+  padding: 4rem 0;
   /* Stack this panel over the bottom of the fist svg */
   position: relative;
   z-index: 1;
