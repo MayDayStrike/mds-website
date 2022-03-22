@@ -78,6 +78,11 @@ const MenuBar = ({ emitHeightChange }) => {
             </Link>
           </li>
           <li>
+            <Link className={MenuBarStyles.menuBarItemLink} to="/events">
+              Events
+            </Link>
+          </li>
+          <li>
             <Link className={MenuBarStyles.menuBarItemLink} to="/resources">
               Resources
             </Link>
