@@ -31,7 +31,7 @@ const Events = () => (
         <li><span className={EventStyles.date}> 5.01 •</span> Athens, Georgia - WithoutUs Strike - May Day Event</li>
         <li><span className={EventStyles.date}> 5.01 •</span> Boston, Massachusetts - May Day Strike - May Day Event</li>
         <li><span className={EventStyles.date}> 5.01 •</span> Atlanta, Georgia - May Day Strike - May Day Event</li>
-        <li><span className={EventStyles.date}> 5.01 •</span> Chicago, Illinois - Proletariat Representation - Unite The Left</li>
+        <li><span className={EventStyles.date}> 5.01 •</span> Chicago, Illinois - <a href="https://www.proletariatusa.org/events/unite-the-left-2022">Proletariat Representation USA - Unite The Left</a></li>
         <li><span className={EventStyles.date}> 5.01 •</span> Washington, DC - The Debt Collective - Student Debt Strike</li>
         <li><span className={EventStyles.date}> 5.08 - 5.15 • </span> Atlanta, Georgia - Atlanta Forest Defense - May Week of Action</li>
       </ul>
