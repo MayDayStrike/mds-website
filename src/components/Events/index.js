@@ -15,7 +15,7 @@ const Events = () => (
       <h2>April</h2>
       <ul>
         <li>
-          <span className={EventStyles.date}>4.04 •</span> Washington, DC - Strike Debt - March on Washington to Cancel Student Debt
+          <span className={EventStyles.date}>4.04 •</span> Washington, DC - <a href="https://debtcollective.org/" target="_blank">The Debt Collective</a> - March on Washington to Cancel Student Debt
         </li>
         <li>
           <span className={EventStyles.date}> 4.24 •</span> Richmond, VA - SBWorkers United and Bernie Sanders - Unity Fest
@@ -31,14 +31,14 @@ const Events = () => (
         <li><span className={EventStyles.date}> 5.01 •</span> Athens, Georgia - WithoutUs Strike - May Day Event</li>
         <li><span className={EventStyles.date}> 5.01 •</span> Boston, Massachusetts - May Day Strike - May Day Event</li>
         <li><span className={EventStyles.date}> 5.01 •</span> Atlanta, Georgia - May Day Strike - May Day Event</li>
-        <li><span className={EventStyles.date}> 5.01 •</span> Chicago, Illinois - <a href="https://www.proletariatusa.org/events/unite-the-left-2022">Proletariat Representation USA - Unite The Left</a></li>
-        <li><span className={EventStyles.date}> 5.01 •</span> Washington, DC - The Debt Collective - Student Debt Strike</li>
-        <li><span className={EventStyles.date}> 5.08 - 5.15 • </span> Atlanta, Georgia - Atlanta Forest Defense - May Week of Action</li>
+        <li><span className={EventStyles.date}> 5.01 •</span> Chicago, Illinois - <a href="https://www.proletariatusa.org/events/unite-the-left-2022" target="_blank">Proletariat Representation USA - Unite The Left</a></li>
+        <li><span className={EventStyles.date}> 5.01 •</span> Washington, DC - <a href="https://debtcollective.org/" target="_blank">The Debt Collective</a> - <a href="https://actionnetwork.org/forms/cant-pay-wont-pay-join-the-student-debt-strike" target="_blank">Student Debt Strike</a></li>
+        <li><span className={EventStyles.date}> 5.08 - 5.15 • </span> Atlanta, Georgia - <a href="https://defendtheatlantaforest.com" target="_blank">Atlanta Forest Defense</a> - May Week of Action</li>
       </ul>
       <h2>June</h2>
       <ul>
         <li>
-          <span className={EventStyles.date}> 6.18 •</span> Washington, DC - Poor People's Campaign - March on Washington
+          <span className={EventStyles.date}> 6.18 •</span> Washington, DC - <a href="https://www.poorpeoplescampaign.org/june-18-2022/" target="_blank">Poor People's Campaign - March on Washington</a>
         </li>
       </ul>
     </div>
