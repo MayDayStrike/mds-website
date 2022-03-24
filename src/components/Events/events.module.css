@@ -1,0 +1,16 @@
+.eventContainer {
+  margin-bottom: 3rem;
+}
+
+.eventContainer li {
+ list-style: none;
+}
+
+.eventContainer .date {
+ font-family: LietzLindauHamburg;
+}
+
+.eventContainer h2 {
+  margin: 2rem 0 1rem 0;
+}
+
