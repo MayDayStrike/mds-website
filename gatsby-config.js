@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     author: `@MayDayStrike`,
-    description: `May Day is a general labor strike beginning on the 1st of May and lasting #UntilDemandsAreMet.`,
+    description: `May Day represents a series of actions beginning on the 1st of May and lasting #UntilDemandsAreMet.`,
     keywords: `May, Day, Strike, Labor, Unions`,
     title: `May Day Strike`,
     siteUrl: `https://maydaystrike.org/`,
