@@ -2,15 +2,20 @@
   margin-bottom: 3rem;
 }
 
-.eventContainer li {
- list-style: none;
+.eventContainer ul li {
+  list-style-type: none;
+}
+
+.outreach > li {
+  list-style-type: square !important;
+  margin-left: 1rem;
+  margin-bottom: 4px;
 }
 
 .eventContainer .date {
- font-family: LietzLindauHamburg;
+  font-family: LietzLindauHamburg;
 }
 
 .eventContainer h2 {
   margin: 2rem 0 1rem 0;
 }
-

@@ -8,8 +8,16 @@ const Events = () => (
     <h1 style={{ marginTop: "3rem" }}>Upcoming Events</h1>
     <div style={{ marginBottom: '2rem' }}>
       <b>
-        Outreach Coordinator:
-      </b> Mary Jane (<span style={{ color: '#C73A26'}}><FontAwesomeIcon icon={faDiscord} /></span>: Mary Jane#1208)
+        Outreach Coordinators:
+      </b> 
+      <ul className={EventStyles.outreach}>
+        <li>
+          Mary Jane (<span style={{ color: '#C73A26'}}><FontAwesomeIcon icon={faDiscord} /></span>: Mary Jane#1208)
+        </li>
+        <li>
+          Erin (<span style={{ color: '#C73A26'}}><FontAwesomeIcon icon={faDiscord} /></span>: SmoothE#7994)
+        </li>
+      </ul>
     </div>
     <div>
       <h2>April</h2>
@@ -23,12 +31,12 @@ const Events = () => (
       </ul>
       <h2>May</h2>
       <ul>
-        <li><span className={EventStyles.date}> 5.01 •</span> Little Rock, Arkansas - WithoutUs Strike - May Day Event</li>
-        <li><span className={EventStyles.date}> 5.01 •</span> Kansas City, Missouri - WithoutUs Strike  - May Day Event</li>
-        <li><span className={EventStyles.date}> 5.01 •</span> Los Angeles, California - WithoutUs Strike - May Day Event</li>
-        <li><span className={EventStyles.date}> 5.01 •</span> San Antonio, Texas - WithoutUs Strike - May Day Event</li>
-        <li><span className={EventStyles.date}> 5.01 •</span> Dallas, Texas - WithoutUs Strike  - May Day Event</li>
-        <li><span className={EventStyles.date}> 5.01 •</span> Athens, Georgia - WithoutUs Strike - May Day Event</li>
+        <li><span className={EventStyles.date}> 5.01 •</span> Little Rock, Arkansas - <a href="https://actionnetwork.org/event_campaigns/general-protest-mayday-of-action" target="_blank">WithoutUs Strike - May Day Event</a></li>
+        <li><span className={EventStyles.date}> 5.01 •</span> Kansas City, Missouri - <a href="https://actionnetwork.org/event_campaigns/general-protest-mayday-of-action" target="_blank">WithoutUs Strike - May Day Event</a></li>
+        <li><span className={EventStyles.date}> 5.01 •</span> Los Angeles, California - <a href="https://actionnetwork.org/event_campaigns/general-protest-mayday-of-action" target="_blank">WithoutUs Strike - May Day Event</a></li>
+        <li><span className={EventStyles.date}> 5.01 •</span> San Antonio, Texas - <a href="https://actionnetwork.org/event_campaigns/general-protest-mayday-of-action" target="_blank">WithoutUs Strike - May Day Event</a></li>
+        <li><span className={EventStyles.date}> 5.01 •</span> Dallas, Texas - <a href="https://actionnetwork.org/event_campaigns/general-protest-mayday-of-action" target="_blank">WithoutUs Strike - May Day Event</a></li>
+        <li><span className={EventStyles.date}> 5.01 •</span> Athens, Georgia - <a href="https://actionnetwork.org/event_campaigns/general-protest-mayday-of-action" target="_blank">WithoutUs Strike - May Day Event</a></li>
         <li><span className={EventStyles.date}> 5.01 •</span> Boston, Massachusetts - May Day Strike - May Day Event</li>
         <li><span className={EventStyles.date}> 5.01 •</span> Atlanta, Georgia - May Day Strike - May Day Event</li>
         <li><span className={EventStyles.date}> 5.01 •</span> Chicago, Illinois - <a href="https://www.proletariatusa.org/events/unite-the-left-2022" target="_blank">Proletariat Representation USA - Unite The Left</a></li>
