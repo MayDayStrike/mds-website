@@ -37,7 +37,7 @@ const Events = () => (
         <li><span className={EventStyles.date}> 5.01 •</span> San Antonio, Texas - <a href="https://actionnetwork.org/event_campaigns/general-protest-mayday-of-action" target="_blank">WithoutUs Strike - May Day Event</a></li>
         <li><span className={EventStyles.date}> 5.01 •</span> Dallas, Texas - <a href="https://actionnetwork.org/event_campaigns/general-protest-mayday-of-action" target="_blank">WithoutUs Strike - May Day Event</a></li>
         <li><span className={EventStyles.date}> 5.01 •</span> Athens, Georgia - <a href="https://actionnetwork.org/event_campaigns/general-protest-mayday-of-action" target="_blank">WithoutUs Strike - May Day Event</a></li>
-        <li><span className={EventStyles.date}> 5.01 •</span> Boston, Massachusetts - <a href="https://actionnetwork.org/event_campaigns/general-protest-mayday-of-action" target="_blank">WithoutUs Strike - May Day Event</a></li>
+        <li><span className={EventStyles.date}> 5.01 •</span> Boston, Massachusetts - May Day Strike - May Day Event</li>
         <li><span className={EventStyles.date}> 5.01 •</span> Chicago, Illinois - <a href="https://www.proletariatusa.org/events/unite-the-left-2022" target="_blank">Proletariat Representation USA - Unite The Left</a></li>
         <li><span className={EventStyles.date}> 5.01 •</span> Washington, DC - <a href="https://debtcollective.org/" target="_blank">The Debt Collective</a> - <a href="https://actionnetwork.org/forms/cant-pay-wont-pay-join-the-student-debt-strike" target="_blank">Student Debt Strike</a></li>
         <li><span className={EventStyles.date}> 5.08 - 5.15 • </span> Atlanta, Georgia - <a href="https://defendtheatlantaforest.com" target="_blank">Atlanta Forest Defense</a> - May Week of Action</li>
