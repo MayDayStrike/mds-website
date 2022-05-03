@@ -6,7 +6,6 @@ import Splash from "../components/Homepage/Splash"
 import WhoWeAre from "../components/Homepage/WhoWeAre"
 import WhatDoWeWant from "../components/Homepage/WhatDoWeWant"
 import WhenDoWeWantIt from "../components/Homepage/WhenDoWeWantIt"
-import CallToAction from "../components/Homepage/CallToAction"
 
 const IndexPage = ({ location }) => {
   return (
@@ -16,7 +15,6 @@ const IndexPage = ({ location }) => {
       <WhoWeAre />
       <WhatDoWeWant />
       <WhenDoWeWantIt />
-      <CallToAction />
     </Layout>
   )
 }
